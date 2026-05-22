@@ -1,0 +1,23 @@
+jwt:
+  public:
+    key: classpath:app.pub
+  private:
+    key: classpath:app.key
+
+spring:
+  # Enables the DATA.SQL for DATABASE
+  sql:
+    init:
+      mode: always
+
+  jpa:
+    # defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/mydb
+    username: admin
+    password: '123'
+    driver-class-name: com.mysql.cj.jdbc.Driver
