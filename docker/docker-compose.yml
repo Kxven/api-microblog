@@ -6,7 +6,7 @@ services:
     expose:
       - "3306"
     environment:
-      - MYSQL_USER=ADMIN
+      - MYSQL_USER=admin
       - MYSQL_PASSWORD=123
       - MYSQL_DATABASE=mydb
       - MYSQL_ROOT_PASSWORD=123
